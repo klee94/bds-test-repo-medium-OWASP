@@ -5,12 +5,14 @@ buildscript{
 	}
 	dependencies {
 		classpath group: 'com.blackducksoftware.integration', name: 'hub-gradle-plugin', version: '2.1.0'
+		classpath 'org.owasp:dependency-check-gradle:3.1.2'
 	}
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'com.blackducksoftware.hub'
+apply plugin: 'org.owasp.dependencycheck'
 
 group = 'com.blackducksoftware.test'
 sourceCompatibility = 1.8
